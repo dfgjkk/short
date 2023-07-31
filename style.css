@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
 
 header {
     width: 100vw;
     height: 100vh;
-    background: url(orange.png);
+    background: url(bg.png);
     background-size: cover;
     display: flex;
 }
@@ -27,6 +29,11 @@ header {
 
 .header_left p {
     font-size: 0.5em;
+    opacity: 0
+}
+
+.header_left h1 {
+    opacity: 0;
 }
 
 .bio {
@@ -45,6 +52,7 @@ header {
 
 .header_btn {
     cursor: pointer;
+    transform: translateY(-50vh);
 }
 
 .header_btn:hover {
@@ -94,6 +102,17 @@ section h1 {
 .github:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+
+.about {
+    background: black;
+    color: white;
+}
+
+.about p {
+    font-size: 1.5em;
+    width: 50%;
 }
 
 footer {
